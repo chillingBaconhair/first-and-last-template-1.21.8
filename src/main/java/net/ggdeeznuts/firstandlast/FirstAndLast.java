@@ -20,5 +20,6 @@ public class FirstAndLast implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+        LOGGER.info("Uh, :P");
 	}
 }
