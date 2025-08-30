@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "first-and-last",
+	"version": "${version}",
+	"name": "First and Last",
+	"description": "My first mod. Gl guys ;) (yes my name is GG_deeznuts)",
+	"authors": [
+		"GG_deeznuts"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/first-and-last/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ggdeeznuts.firstandlast.FirstAndLast"
+		],
+		"fabric-datagen": [
+			"net.ggdeeznuts.firstandlast.FirstAndLastDataGenerator"
+		],
+        "client": [
+          "net.ggdeeznuts.firstandlast.FirstAndLastClient"
+        ]
+	},
+	"mixins": [
+		"first-and-last.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
